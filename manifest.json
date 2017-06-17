@@ -4,11 +4,12 @@
 
   
 
-	"name": "Lelel",
+	"name": "PUTS",
   
-	"description": "This is a lel testing",
+	"description": "Shopping extension",
   
 	"version": "1.0",
+	"options_page": "options.html",
 
   
 
@@ -18,7 +19,8 @@
     
 		"default_popup": "popup.html"
 , 
-		"default_title": "LEL button"
+		"default_title": "Add to list"
+
 	},
   
 	"permissions": [
