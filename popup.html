@@ -12,36 +12,73 @@
 
 <title>Shopping Extension Tracker</title>
 
-<style>
-
-body {
-
-	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-
-	}
-
-	#status {
-
-		/* avoid an excessively wide status text */
-
-		white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
-
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+<script src="popup.js"></script>
 	<button id="go-to-options">Go to options</button>
   </head>
   <body>
     <div id="Select Currency"></div>
+
+		<table>
+		         <tbody>
+		            <tr>
+		               <td>
+		                  <table id="currency">
+		                     <tr id="trCurrency0">
+		                        <td class="paddingtd">
+		                           <input type="text" id="value0" name="0" maxlength="12">
+		                        </td>
+		                        <td class="paddingtd">
+		                           <select id="currency0" name="0">
+		                              <option value="SGD">Singapore Dollar</option>
+		                              <option value="USD">American Dollar</option>
+		                              <option value="RMB">Chinese Yuan</option>
+		                           </select>
+		                        </td>
+		                     </tr>
+		                     <tr id="trCurrency1">
+		                        <td class="paddingtd">
+		                            <input type="text" id="value1" name="1" maxlength="12">
+		                        </td>
+		                        <td class="paddingtd">
+		                           <select id="currency1" name="1">
+		                              <option value="AFN">Afghan Afghani</option>
+		                              <option value="ALL">Albanian Lek</option>
+		                              <option value="DZD">Algerian Dinar</option>
+		                           </select>
+		                        </td>
+		                     </tr>
+		                  </table>
+		               </td>
+		            </tr>
+		            <tr>
+		               <td>
+		                  <table class="width100">
+		                     <tbody>
+		                        <tr>
+		                           <td class="width100 paddingtd">
+		                              <div id="loading" class="throbber" style="visibility:hidden;"></div>
+		                           </td>
+		                           <td class="paddingtd">
+		                              <input type="button" id="btnAdd" value="Add">
+		                           </td>
+		                           <td class="paddingtd">
+		                              <input type="button" id="btnRemove" value="Remove" style="width:72px;">
+		                           </td>
+		                        </tr>
+		                     </tbody>
+		                  </table>
+		               </td>
+		            </tr>
+		         </tbody>
+		      </table>
+
+
+
   </body>
 </html>
