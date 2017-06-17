@@ -15,11 +15,6 @@
 		"chrome_style": true
 		},
 		
-	"permissions": [
-		"storage",
-		"unlimitedStorage",
-		"tabs"
-		],
   
 
 	"browser_action": {
@@ -32,6 +27,9 @@
 	"permissions": [
     
 		"activeTab",
+		"storage",
+		"unlimitedStorage",
+		"tabs",
     
 	"https://ajax.googleapis.com/"
   
