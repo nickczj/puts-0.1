@@ -20,8 +20,8 @@ Favorite color:
 <button id="save">Save</button>
 
 <script src="options.js"></script>
-</body>
-</html>
+
+<script>
 // Saves options to chrome.storage
 function save_options() {
   var color = document.getElementById('color').value;
@@ -54,3 +54,7 @@ function restore_options() {
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',
     save_options);
+</script>
+
+</body>
+</html>
